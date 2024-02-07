@@ -5,11 +5,13 @@ public class OrderAgnosticBinarySearch {
         boolean isAscending = arr[start] < arr[end]; // Check if array is sorted in ascending order
 
         while (start <= end) {
+            //Finds The Mid Element
             int mid = start + (end - start) / 2;
-
+            
+            //If Mid Equals Target it will return mid
             if (arr[mid] == target)
                 return mid;
-
+            //If Given Array Is Ascending
             if (isAscending) {
                 if (arr[mid] < target)
                     start = mid + 1;
