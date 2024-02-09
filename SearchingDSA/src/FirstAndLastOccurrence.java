@@ -8,6 +8,13 @@ public class FirstAndLastOccurrence {
         System.out.println("Last Occurrence: " + result[1]);
     }
 
+     /**
+     * Finds the first and last occurrence of a target number in a sorted array.
+     * @param nums The sorted array of integers.
+     * @param target The target number to search for.
+     * @return An array containing the first and last occurrence of the target number.
+     */
+
     public static int[] searchRange(int[] nums, int target) {
         int[] result = {-1, -1};
         if (nums == null || nums.length == 0) {
